@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        
+        <h1>gestisci DB</h1>
+        <hr>
+        <div>
+            <form name='creaDB' action='creaDB.jsp' method="POST">
+                <input type='submit' value='creaDB'/>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <form name='eliminaDB' action='eliminaDB.jsp' method="POST">
+                <input type='submit' value='eliminaDB'/>
+            </form>
+        </div>
+        <hr>
+        <div style="background-color:yellow; float:left; min-width: 100px;">
+            <form name='creaUser' action='creaUser.jsp'  method="POST">
+                nameU <input type='text' name='nameU' required/><br>
+                surname <input type='text' name='surname' required/><br>
+                password <input type='password' name='password' required/><br>
+                address <input type='text' name='address' required/><br>
+                phone <input type='text' name='phone' required/><br>
+                admin <select name="typerole">
+                    <option value="client">client</option>
+                    <option value="admin">admin</option>
+                </select><br>
+                email <input type='email' name='email' required/><br>
+                
+                <input type='submit' value='creaUser'/>
+            </form>
+        </div>
+        <div style="background-color:red; float:left; min-width: 100px;">
+            <form name='creaPizza' action='creaPizza.jsp'  method="POST">
+                nameP <input type='text' name='nameP' required/><br>
+                recipe <input type='text' name='recipe' required/><br>
+                price <input type='number' name='price' min="0" required/><br>
+                                
+                <input type='submit' value='creaPizza'/>
+            </form>
+        </div>
+        <div style="background-color:blue; float:left; min-width: 100px;">
+            <form name='creaOrder' action='creaOrder.jsp'  method="POST">
+                id_u <input type='number' name='id_u' min="1" required/><br>
+                id_p <input type='number' name='id_p' min="1" required/><br>
+                numberOf <input type='number' name='numberOf' min="1" required/><br>
+                dataO <input type='date' name='dataO' required/><br>
+                hour_time <input type='number' name='hour_time' min="1" max="24" required/><br>
+                shipped <select name="shipped">
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select><br>
+                received <select name="received">
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select><br>
+                
+                <input type='submit' value='creaOrder'/>
+            </form>
+        </div>
+        <div>
+            <form name='popolaDB' action='popolaDB.jsp' method="POST">
+                <input type='submit' value='popolaDB'/>
+            </form>
+        </div>
+    </body>
+</html>
