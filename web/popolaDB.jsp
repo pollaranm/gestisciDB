@@ -25,15 +25,19 @@
                 
                 //inserisco le pizze
                 //pizza 1
-                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('Focaccia', 'farina, acqua, olio', 3)");
+                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('Focaccia', 'farina acqua sale olio', 3)");
                 //pizza 2
-                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('Margherita', 'marg ingr', 4)");
+                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('Margherita', 'pomodoro mozzarella basilico', 4)");
                 //pizza 3
-                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('Napoli', 'acciughe ingr', 5)");
-                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('4 Stagioni', 'prosciutto e altre robe', 6)");
-                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('5 Formaggi', 'tutti i formaggi che abbiamo', 7.5)");
-                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('Capricciosa', 'a seconda dello chef', 2.31)");
-                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('Salamino', 'boh indovina dal nome', 1)");
+                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('Napoli', 'pomodoro mozzarella acciughe capperi', 4.5)");
+                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('Cotto', 'pomodoro mozzarella prosciutto cotto', 5)");
+                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('Diavola', 'pomodoro mozzarella olive salamino', 5)");
+                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('Capricciosa', 'pomodoro mozzarella carciofini funghi wurstel olive cotto', 6.5)");
+                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('Valtellina', 'pomodoro mozzarella bresaola rucola pinoli', 7)");
+                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('Signor Nello', 'pomodoro mozzarella salsiccia provola radicchio', 7)");
+                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('Primavera', 'pomodoro pomodoro fresco rucola e bufala', 6.5)");
+                st.executeUpdate("INSERT INTO pizzas (nameP, recipe, price) VALUES ('Vegetariana ', 'mozzarella pomodoro fresco funghi carciofi pesto verdure', 5.5)");
+                
                 
                 //inserisco gli utenti
                 st.executeUpdate("INSERT INTO users(nameU, surname, password, address, phone, typerole, email) VALUES ('OPizzaiolo', 'Di Napoli', 'maradona', 'Napoli centro', '328', 'admin', 'opizzaiolo@dinapoli.it')");
@@ -44,7 +48,7 @@
                 st.executeUpdate("INSERT INTO users(nameU, surname, password, address, phone, typerole, email) VALUES ('andre', 'non lo so', 'orbassano', 'come la password', '55555', 'client', 'andre@gmail.it')");
                                 
                 //inserisco gli ordini
-                st.executeUpdate("INSERT INTO orders(id_u, id_p, numberOf, dataO, hour_time, shipped, received) VALUES (2, 1, 1, '2014-03-12', '20:00', false, false)");
+                /*st.executeUpdate("INSERT INTO orders(id_u, id_p, numberOf, dataO, hour_time, shipped, received) VALUES (2, 1, 1, '2014-03-12', '20:00', false, false)");
                 st.executeUpdate("INSERT INTO orders(id_u, id_p, numberOf, dataO, hour_time, shipped, received) VALUES (2, 2, 2, '2014-03-12', '20:00', false, false)");
                 st.executeUpdate("INSERT INTO orders(id_u, id_p, numberOf, dataO, hour_time, shipped, received) VALUES (2, 3, 3, '2014-03-12', '20:00', false, false)");
                 st.executeUpdate("INSERT INTO orders(id_u, id_p, numberOf, dataO, hour_time, shipped, received) VALUES (3, 1, 1, '2014-03-15', '22:00', true, false)");
@@ -52,7 +56,7 @@
                 st.executeUpdate("INSERT INTO orders(id_u, id_p, numberOf, dataO, hour_time, shipped, received) VALUES (3, 5, 3, '2014-03-15', '22:00', true, false)");
                 st.executeUpdate("INSERT INTO orders(id_u, id_p, numberOf, dataO, hour_time, shipped, received) VALUES (4, 1, 1, '2014-04-12', '11:00', false, false)");
                 st.executeUpdate("INSERT INTO orders(id_u, id_p, numberOf, dataO, hour_time, shipped, received) VALUES (4, 3, 1, '2014-04-12', '11:00', false, false)");
-                st.executeUpdate("INSERT INTO orders(id_u, id_p, numberOf, dataO, hour_time, shipped, received) VALUES (4, 2, 1, '2014-04-12', '11:00', false, false)");
+                st.executeUpdate("INSERT INTO orders(id_u, id_p, numberOf, dataO, hour_time, shipped, received) VALUES (4, 2, 1, '2014-04-12', '11:00', false, false)");*/
                
                
                 st.close();
